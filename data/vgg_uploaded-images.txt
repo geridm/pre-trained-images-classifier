@@ -1,0 +1,80 @@
+path to the folder of pet images: uploaded_images/
+CNN model architecture to use: vgg, resnet, or alexnet: vgg
+file that contains the list of valid dog names: dognames.txt
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                     Dog_01.jpg  label:                        dog
+ 2 key:              Black_bird_01.jpg  label:                 black bird
+ 3 key:                     Dog_02.jpg  label:                        dog
+ 4 key:                Soup_cup_01.jpg  label:                   soup cup
+
+     MATCH:
+
+ NOT A MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:               miniature poodle
+
+             Black_bird_01.jpg: 
+Real:                 black bird   Classifier:                         magpie
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:               miniature poodle
+
+               Soup_cup_01.jpg: 
+Real:                   soup cup   Classifier:                    mixing bowl
+
+# Total Images 4 # Matches: 0 # NOT Matches: 4
+
+     MATCH:
+
+ NOT A MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:               miniature poodle  
+PetLabelDog: 1  ClassLabelDog: 1
+
+             Black_bird_01.jpg: 
+Real:                 black bird   Classifier:                         magpie  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:               miniature poodle  
+PetLabelDog: 1  ClassLabelDog: 1
+
+               Soup_cup_01.jpg: 
+Real:                   soup cup   Classifier:                    mixing bowl  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 0 # NOT Matches: 4
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog:   0.0 Pct Corr NOTdog:   0.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+Results for CNN model: vgg
+
+Number of images: 4
+Number of dog images: 0
+Number of 'Not-a' dog images: 2
+
+pct_match: 0.00%
+pct_correct_dogs: 0.00%
+pct_correct_breed: 0.00%
+pct_correct_notdogs: 0.00%
+
+Incorrectly Classified Dogs:
+
+Incorrectly Classified Breeds:
+Real: dog, Classifier: miniature poodle
+Real: dog, Classifier: miniature poodle
+
+** Total Elapsed Runtime: 0:0:4
