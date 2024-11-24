@@ -68,7 +68,7 @@ def print_results(results_dic, results_stats_dic, model,
     # Print general statistics
     print(f"Number of images: {results_stats_dic['n_images']}")
     print(f"Number of dog images: {results_stats_dic['n_correct_dogs']}")
-    print(f"Number of 'Not-a' dog images: {results_stats_dic['n_notdogs']}\n")
+    print(f"Number of 'Not-a' dog images: {results_stats_dic['n_notdogs_img']}\n")
     
     # Print percentage statistics
     for key in results_stats_dic:

@@ -83,7 +83,9 @@ def adjust_results4_isadog(results_dic, dogfile):
         else:
             value.extend([0])
 
-        if any(dog in classifier_label for dog in dognames_dic):
+        if classifier_label in dognames_dic:
             value.extend([1])
         else:
             value.extend([0])
+
+        
